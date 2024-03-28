@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorBri</title>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<div id="extension_body">
+
+  <body>
+    <h1>ColourBri</h1>
+    <img id="Logo" src="./colibri_silouhette.png"
+      alt="ColourBri Logo in white in front of a colour gradient, it is shaped like a humming-bird." height="100px">
+
+    <img src="" id="graph" class="graph" />
+    <div class="button-line">
+      <form id="process_image" method="post" enctype="multipart/form-data">
+        <label for="input_file" class="custom-file-upload">
+          <input type="file" id="input_file" name="file" />
+          <span>↑ Upload</span>
+        </label>
+      </form>
+    <button class="button" id="reset"> &#x2715 Reset</button>
+    </div>
+    <div>
+      <h3 id="instruction_change_from" hidden="1">
+        Change this colour:
+      </h3>      
+    </div>
+    <div id="button-container" style="background-color: white;"></div>
+    <div id="instruction_change_to" hidden="1">
+      <h3>
+        To this colour:
+      </h3>      
+      <input type="color" id="color-picker" name="color-picker" />
+      <button class="button" id="apply"> &#x2714 Apply</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+
+</div>
+
+</html>
